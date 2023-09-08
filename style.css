@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
 /*CSS Reset / Normalize*/
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
@@ -12,7 +14,7 @@ coloque nas sessões indicadas*/
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -41,25 +43,195 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu*/
 
 section.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0 32px 0;
+}
 
+/*Sessão Logo da Página*/
+
+header.menu__header{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3.menu__title {
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+/*Seção Menu*/
+
+nav.menu__nav{
+    align-items: center;
+    display: flex;
+}
+
+ul.menu__list{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+li.menu__list__item{
+    font-weight: 500;
+    margin-right: 32px;
+}
+
+li.menu__list__item:hover{
+    text-decoration: underline;
+}
+
+li.menu__list__item__contato{
+    font-weight: 700;
+}
+
+li.menu__list__item__contato:hover{
+    text-decoration: underline;
 }
 
 /*Sessão Title*/
 
 section.title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 32px 0;
+}
 
+div.title__div{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+}
+
+h2.title__bio{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h3.title__subsection{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 24px 0 24px 0;
+}
+
+ul.title__network{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+li.title__network__item{
+    margin-right: 32px;
+    left: 0;
+}
+
+li.title__network__item:hover{
+    text-decoration: underline;
 }
 
 /*Sessão About*/
 
 section.about{
+   background: var(--azul-10, #EAF2FD);
+   margin: 32px auto;
+   padding: 64px;
+   width: 100%;
+}
 
+div.about__container{
+    width: 60%;
+}
+
+h3.about__title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+p.about__paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 16px 0 16px 0;
+}
+
+/*Sessão Skills*/
+
+section.skills{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+h3.skills__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+div.skills__line{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+div.skills__box{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 174px;
+    width: 176px;
+    padding: 16px;
+}
+
+li.skills__name{
+    margin-top: 8px;
 }
 
 /*Sessão Hobbies*/
 
 section.hobbies{
-    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 88px 0;
+    width: 100%;
+}
+
+h3.hobbies__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+div.hobbies__line{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+div.hobbies__box{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 174px;
+    width: 176px;
+    padding: 16px;
+}
+
+li.hobbies__name{
+    margin-top: 8px;
 }
 
 /* Experiência Acadêmica*/
