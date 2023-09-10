@@ -263,11 +263,21 @@
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                     <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
+                        <div class="formcontato__label">
+                            <label for="nome">Nome</label>
+                            <input class="formcontato__input" type="text" id="nome">
+                        </div>
+                        <div class="formcontato__label">
+                            <label for="email">E-mail</label>
+                            <input class="formcontato__input" type="email" id="email">
+                        </div>
+                        <div class="formcontato__label">
+                            <input class="formcontato__input formcontato__input__assunto" type="text" id="assunto" placeholder="Assunto">
+                        </div>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                        <div class="formcontato__botao__container">
+                            <button class="formcontato__botao">Enviar mensagem</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -277,7 +287,7 @@
         <section class="footer">
             <div class="footer__rodape">
                 <p>Desenvolvido por Fulana de Tal</p>
-                <p>2022</p>
+                <p>2023</p>
             </div>
         </section>
     </div>
