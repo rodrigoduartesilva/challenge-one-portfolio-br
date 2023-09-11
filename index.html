@@ -265,16 +265,19 @@
                     <form class="formcontato__form">
                         <div class="formcontato__label">
                             <label for="nome">Nome</label>
-                            <input class="formcontato__input" type="text" id="nome">
+                            <input class="formcontato__input" type="text" id="nome" name="nome" value="" required>
+                            <span class="mensagem-erro-nome"></span>
                         </div>
                         <div class="formcontato__label">
                             <label for="email">E-mail</label>
-                            <input class="formcontato__input" type="email" id="email">
+                            <input class="formcontato__input" type="email" id="email" name="email" value="" required>
+                            <span class="mensagem-erro-email"></span>
                         </div>
                         <div class="formcontato__label">
-                            <input class="formcontato__input formcontato__input__assunto" type="text" id="assunto" placeholder="Assunto">
+                            <input class="formcontato__input formcontato__input__assunto" type="text" id="assunto" placeholder="Assunto" required>
+                            <span class="mensagem-erro-assunto"></span>
                         </div>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" minlength="15" maxlength="45" id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
                         <div class="formcontato__botao__container">
                             <button class="formcontato__botao">Enviar mensagem</button>
                         </div>
@@ -292,7 +295,6 @@
         </section>
     </div>
     <!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
+<script src="./validate.js"></script>
 </body>
 </html>
-

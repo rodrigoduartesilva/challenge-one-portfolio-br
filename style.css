@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --cor-error-message: #b80c00ef;
 }
 
 body {
@@ -463,7 +464,7 @@ textarea.formcontato__textarea{
     flex-direction: column;
     gap: 92px;
     justify-content: flex-end;
-    margin-bottom: 61px;
+    margin-bottom: 37px;
     padding: 16px 12px;
 }
 
@@ -512,6 +513,21 @@ div.footer__rodape p{
     margin: 0;
 }
 
+.mensagem-erro-nome{
+    color: var(--cor-error-message);
+    height: 8px;
+}
+
+.mensagem-erro-email{
+    color: var(--cor-error-message);
+    height: 8px;
+}
+
+.mensagem-erro-assunto{
+    color: var(--cor-error-message);
+    height: 8px;
+}
+
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
@@ -519,7 +535,7 @@ utilize como referência os breakpoints @media abaixo*/
 @media (min-width: 768px) {
 
 /* Menu */
-
+    
 /*title*/
 
 /*Skills*/
